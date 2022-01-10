@@ -8,7 +8,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of messages for user input
 const questions = [{
     type: "input",
-    message: "Enter the Title of your Project: " + "\n",
+    message: "Enter the Title of your Project: ",
     name: "title"
 }, {
     type: "input",
@@ -44,7 +44,7 @@ const questions = [{
     name: "features"
 },{
     type: "input",
-    message: "Enter how can other developers con cutribute on your app. add guidelines to do if so: " + "\n",
+    message: "Enter how can other developers con cutribute on your app. add guidelines to do if so: ",
     name: "contributing"
 },{
     type: "input",
@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
             return console.log(err)
             
         } else {
-            console.log("Perfect")
+            console.log("Please wait Generating README.md")
         }
     })
 }
